@@ -1,0 +1,406 @@
+/*Algemene css*/
+
+body {
+	font-family: "Nexa Light";
+	src: url(fonts/Nexa%20Light.otf);
+	background-color: #f3e5d8;
+}
+
+h1,
+legend {
+	display: block;
+	font-family: "Nexa Bold";
+	word-spacing: 0.25em;
+	text-indent: 1.25em;
+	font-size: 1.4em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.4em;
+	display: block;
+}
+
+a {
+	font-family: "Nexa Bold";
+}
+
+footer {
+	display: grid;
+	grid-area: ft;
+	color: #2800a0;
+	font-size: 0.8em;
+	background-image: url(images/sea.png);
+	background-size: contain;
+}
+
+section > p {
+	text-align: center;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}
+
+
+/*	Navigate*/
+
+.navigation {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+nav a {
+	color: #00d66c;
+	font-size: 1.5em;
+	line-height: 3em;
+	margin-left: 0.5em;
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+nav img {
+	width: 3em;
+	padding: 0.3em;
+}
+
+
+/*navigatie van de desktop versie uitschakelen */
+
+.primarynav {
+	display: none;
+}
+
+
+/*Knoppen */
+
+button {
+	font-family: "Nexa Light";
+	font-size: 1.1em;
+	border-radius: 0.5rem;
+	border-style: none;
+	background-color: #ff3268;
+	width: auto;
+	margin: 0.1rem;
+}
+
+button:hover,
+input [type=text]:hover {
+	background-color: #00d66c;
+}
+
+input:focus {
+	background-color: #f7f7f7;
+	padding: 4px;
+	border: none;
+	border-bottom: solid 3px #00d66c;
+	transition: border 0.3;
+}
+
+input:active {
+	background-color: #f2e3d7;
+}
+
+{
+	background-color:
+}
+
+fieldset > legend:hover {
+	transition: all 0.15s ease-in-out;
+}
+
+
+/*Links */
+
+h2>a {
+	color: #ff3268;
+	text-decoration: none;
+}
+
+button a {
+	text-decoration: none;
+	color: white;
+}
+
+main button:first-child {
+	padding: 2%;
+}
+
+main >button {
+	display: flex;
+	justify-content: center;
+	width: 80%;
+	margin: auto;
+	font-family: "Nexa Light";
+	font-size: 1.2em;
+	border-radius: 0.5rem;
+	border-style: none;
+	background-color: #ff3268;
+	color: white;
+	text-align: center;
+}
+
+
+/*	*Home*/
+
+.carrousel {
+	display: borderbox;
+	padding-top: 8rem;
+	padding-bottom: 18rem;
+	background-image: url(images/planehelft.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+aside,
+.compare {
+	max-width: 450px;
+	background-color: #fff;
+	border-radius: 1.5em;
+	margin: 1rem auto;
+	/*	padding: 1rem;*/
+}
+
+article {
+	display: block;
+	max-width: 450px;
+	border-radius: 1.5em;
+	background-color: #fff;
+	margin: 1rem auto;
+	padding: 1rem;
+}
+
+.carrousel {
+	display: flex;
+	flex-direction: row;
+	overflow-x: scroll;
+}
+
+section img {
+	width: 8em;
+	height: 12em;
+}
+
+div h2 {
+	font-family: "Nexa Bold";
+	font-size: 1.7em;
+	display: flex;
+	border-radius: 1.5rem;
+	padding: 1.3rem;
+	background-color: #f7f7f7;
+	text-align: right;
+}
+
+.carrousel img {
+	border-radius: 1.5rem;
+	margin: 2rem;
+	border: #2800a0 solid;
+}
+
+
+/*Grid , aanbevolen verhalen */
+
+.containergrid {
+	display: grid;
+	grid-template-columns: 4;
+}
+
+
+/*Vind je verhaal*/
+
+form {
+	max-width: 26em;
+	border-radius: 1.5em;
+	background-color: #fff;
+	margin: 1rem auto;
+	padding: 1rem;
+	text-align: center;
+}
+
+legend {
+	font-size: 1.4em;
+	line-height: 1.5;
+}
+
+
+/* Verhaal detail */
+
+img[alt=web],
+img[alt=ipad] {
+	display: none;
+}
+
+img[alt=mobile] {
+	width: 100%;
+}
+
+button.star {
+	max-width: 60px;
+	max-height: 60px;
+	border-radius: 50%;
+	/*	border: solid white;*/
+	box-shadow: 0.1rem 0.1rem 0.1rem 0.1rem grey;
+	/*	margin: 1rem*/
+}
+
+button > img {
+	width: 1rem;
+	height: 1rem;
+}
+
+.like {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.compare {
+	display: flex;
+	flex-direction: row;
+	max-width: 450px;
+}
+
+.more {
+	width: 6em;
+	height: 6em;
+	border-radius: 1.5em;
+	margin: 0.4rem;
+}
+
+
+/*Inloggen en aanmelden */
+
+fieldset {
+	text-align: center;
+	border: 1.5em;
+	margin: 1rem;
+}
+
+.input,
+form a,
+label {
+	display: block;
+}
+
+.gender {
+	display: inline;
+	font-size-adjust: 1.5em;
+}
+
+
+/*Responsive */
+
+
+/*Tablets*/
+
+@media only screen and (min-width:768px) and (max-width:992px) {
+	/*
+	body {
+	max-width: 992px;
+	overflow-x: hidden;
+}
+*/
+	/*navigatie*/
+	nav img {
+		display: none;
+	}
+	.primarynav {
+		display: flex;
+	}
+	/*detail*/
+	img[alt=ipad] {
+		display: inline;
+		width: 100%;
+	}
+	img[alt=mobile] {
+		display: none;
+	}
+	.containergrid {
+		display: flex;
+		width: 100vw;
+	}
+	article {
+		margin: 2rem;
+	}
+}
+
+
+/*Desktop*/
+
+@media only screen and (min-width: 992px) {
+	/*
+	body {
+		max-width: 970px;
+		overflow-x: hidden;
+	}
+*/
+	/*navigatie */
+	nav img {
+		display: none;
+	}
+	.primarynav {
+		display: flex;
+	}
+	/*home */
+	.containergrid {
+		display: flex;
+		width: 100vw;
+	}
+	article {
+		margin: 2rem;
+	}
+	.carrousel {
+		display: borderbox;
+		padding-top: 7rem;
+		padding-bottom: 18rem;
+		background-image: url(images/planehelft.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	/*detail*/
+	main {
+		text-align: center;
+	}
+	img[alt=web] {
+		display: block;
+		width: 100%;
+	}
+	img[alt=mobile] {
+		display: none;
+	}
+	img[alt=ipad] {
+		display: none;
+	}
+	.help {
+		display: inline-flex;
+	}
+	.compare {
+		display: inline-flex;
+		margin: auto
+	}
+}
+
+
+/*Micro interacties*/
+
+
+/*1. favorieten naar persoonlijke account*/
+
+section.like {
+	top: 1em;
+	transition: all 2s;
+}
+
+section.flying {
+	transform: scale(1.0) rotate(-360deg) skew(5deg, -20deg);
+}
+
+article.aanb-1 {
+	transition: 2s;
+}
+
+.aanb-1a {
+	transform: rotate(2.0) scale(1.0);
+}

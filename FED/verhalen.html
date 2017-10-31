@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Genres</title>
+	<link rel="stylesheet" href="Stylesheet/stylesheet.css">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Bold.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Light.otf">
+	<link rel="stylesheet" href="Stylesheet/fonts/Nexa%20Regular.otf">
+	<script src="scripts/script.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<nav>
+			<ul class="navigation">
+				<li>
+					<a class="primarynav" href="index.html"><img class="navimg" src="Stylesheet/images/transavia-logo-stacked-white.svg" alt="logo"></a>
+				</li>
+				<li class="primarynav"><a href="index.html">Home</a></li>
+				<li class="primarynav"><a href="verhalen.html">Vind je verhaal</a></li>
+				<li class="primarynav"><a href="login.html">Login</a></li>
+				<li>
+					<a href="index.html"><img src="Stylesheet/images/homeic.png" alt="Home"></a>
+				</li>
+				<li>
+					<a href="verhalen.html"><img src="Stylesheet/images/stories.png" alt="Verhalen"></a>
+				</li>
+				<li>
+					<a href="login.html"><img src="Stylesheet/images/login.png" alt="Login"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+
+	<main>
+		<!--Filter -->
+
+		<section>
+
+			<form class="slider" action="verhalen.html">
+				<h1>Filter</h1>
+				<input class="lang" type="checkbox"> Engels
+				<input class="lang" type="checkbox"> Nederlands
+				<input class="lang" type="checkbox"> Frans
+				<label for="vv">
+					Vrolijk
+					<input type="range" id="vv"> Verdrietig
+				</label>
+				<label for="gs">
+					Grappig
+					<input type="range" id="gs"> Serieus
+				</label>
+				<label for="kl">
+					Kort
+					<input type="range" id="kl"> Lang
+				</label>
+				<label for="sn">
+					Geen seks
+					<input type="range" id="sn"> Veel seks
+				</label>
+				<label for="vv2">
+					Veilig
+					<input type="range" id="vv2"> Verontrustend
+				</label>
+				<label for="zg">
+					Zachtaardig
+					<input type="range" id="zg"> Gewelddadig
+				</label>
+
+				<button><a href="index.html">Zoek</a></button>
+
+			</form>
+		</section>
+
+		<!--Sorteer -->
+
+		<section>
+
+			<form class="sorteer" action="verhalen.html">
+				<h1>Sorteer</h1>
+				<select name="sorteer" id="sorteer">
+					<option value="mostread"> Meest gelezen</option>
+					<option value="mostliked"> Meest geliked</option>
+					<option value="mostrecent"> Meest recent</option>
+					<option value="alfa"> Alfabetische volgorde</option>
+				</select>
+			</form>
+		</section>
+
+		<section>
+			<h1>Verhalen</h1>
+			<p>Beroemd</p>
+			<p>Hongerwinter</p>
+			<p>Nichterig</p>
+			<p>Moe</p>
+			<p>Verrassing</p>
+			<p>Van vader tot zoon</p>
+
+		</section>
+
+
+	</main>
+
+	<footer>
+		<p>&copy; Maxime Kramer - Project Web 2017</p>
+	</footer>
+</body>
+
+</html>
